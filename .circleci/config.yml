@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  test:
+    docker:
+    - image: google/dart
+    steps:
+    - checkout
+    - run: pub get && pub run test
+workflows:
+  version: 2
+  test:
+    jobs:
+    - test
