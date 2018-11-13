@@ -27,3 +27,14 @@ abstract class Disposable {
     return DisposableCollection.from(disposables, autoClear: true);
   }
 }
+
+/// Callback used in the [using] method.
+typedef void DisposableBlock<D extends Disposable>(D disposable);
+
+/// Use a [Disposable] and dispose of it right away.
+void using<D extends Disposable>(Disposable disposable, DisposableBlock block) {
+  checkNotNull(disposable, message: () => "disposable can't be null");
+  checkNotNull(block, message: () => "block can't be null");
+  block(disposable);
+  disposable.dispose();
+}
