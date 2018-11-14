@@ -1,7 +1,7 @@
 name: disposables
 description: Simple library to manage objects needing to release its own resources.
-version: 0.1.1
-homepage: https://github.com/marcguilera/dart_disposables
+version: 0.1.2
+homepage: https://github.com/marcguilera/disposables.dart
 author: marcguilera <marcguilerap@gmail.com>
 
 environment:
