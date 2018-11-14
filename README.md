@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/marcguilera/dart_disposables.svg?style=svg)](https://circleci.com/gh/marcguilera/dart_disposables)
+[![CircleCI](https://circleci.com/gh/marcguilera/disposables.dart.svg?style=svg)](https://circleci.com/gh/marcguilera/disposables.dart)
 [![pub package](https://img.shields.io/pub/v/disposables.svg)](https://pub.dartlang.org/packages/disposables)
 
 Simple library to manage objects needing to release its own resources.
